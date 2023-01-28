@@ -1,12 +1,7 @@
-@use "@angular/material" as mat;
+@use '@angular/material' as mat;
 @import "./custom-palettes";
 
-@include mat.core();
-@import '~@angular/material/theming';
-$custom-typography: mat-typography-config($font-family: 'Graphie'
-);
 
-@include angular-material-typography($custom-typography);
 $church-primary: mat.define-palette($primary-church-palette, 700);
 $church-accent: mat.define-palette($accent-church-palette, 100);
 
