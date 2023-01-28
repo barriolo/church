@@ -5,6 +5,8 @@ import { SiteComponent } from '../page/site.component';
 import { MatButtonModule } from '@angular/material/button';
 import {YouTubePlayerModule} from '@angular/youtube-player';
 import { HttpClientModule } from '@angular/common/http';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [SiteComponent],
@@ -14,6 +16,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatButtonModule,
     YouTubePlayerModule,
     HttpClientModule,
+    MatIconModule,
+    MatMenuModule
   ]
 })
 export class SiteModule { }

@@ -1,17 +1,29 @@
 <mat-toolbar color="primary">
     <div class="container-header">
-        <div>
+        <div class="mobile-menu">
+            <div  *ngIf="screenWidth < 850" [ngStyle]="{'display: none': screenWidth > 850}">
+                <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu" >
+                    <mat-icon>menu</mat-icon>
+                </button>
+                <mat-menu #menu="matMenu" style="border: 1px solid red;">
+                    <a mat-menu-item href="#live">CULTO ONLINE</a>
+                    <a mat-menu-item href="#louvor">FAÇA SUA PARTE</a>
+                    <a mat-menu-item href="#live">QUEM SOMOS</a>
+                </mat-menu>
+            </div>
             <a class="setenta" href="#home">70X7</a>
             <a class="pipe">|</a>
             <a class="church" href="#home">CHURCH</a>
         </div>
-        <div class="menu">
+        <div class="menu" >
             <a href="#live">CULTO ONLINE</a>
             <a>|</a>
             <a href="#louvor">FAÇA SUA PARTE</a>
             <a>|</a>
             <a href="#live">QUEM SOMOS</a>
         </div>
+
+
     </div>
 </mat-toolbar>
 <div class="body">
@@ -39,7 +51,7 @@
         <h1>Culto On-line</h1>
         <youtube-player
             #player
-            videoId="xUw9n14sdfk"
+            videoId="sSuA8jKsLlA"
             (ready)="onReady($event)"
             (stateChange)="onStateChange($event)"
         ></youtube-player>

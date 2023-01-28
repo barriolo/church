@@ -2,6 +2,9 @@ mat-toolbar {
     height: 70px;
     position: fixed;
 }
+a {
+    font-family: 'Akrobat ExtraBold', sans-serif;
+}
 .container-header {
     display: flex;
     align-items: center;
@@ -48,9 +51,16 @@ mat-toolbar {
             cursor: pointer;
         }
     }
+    .mobile-menu {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: row;
+        color: black;
+    }
 }
 .body {
-    height: 100vh;
+    height: auto;
     width: 100vw;
     margin: 1rem;
     .img-container {
@@ -138,23 +148,22 @@ mat-toolbar {
                 gap: 2rem;
                 align-items: center;
                 justify-content: center;
-                height: 700px;
                 .card-item-cultos {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
-                    margin: 4rem;
-                    height: 300px;
+                    margin: 2rem;
+                    height: 200;
                     background-color: #2e2e2e44;
                     h1 {
                         color: #fff;
-                        font-size: 2rem;
+                        font-size: 1.8rem;
                         margin: 0.5rem 0.5rem;
                     }
                     p {
                         color: #fff;
-                        font-size: 1.5rem;
+                        font-size: 1.4rem;
                         text-align: center;
                         margin: 0.5rem 0.5rem;
                     }
@@ -163,25 +172,17 @@ mat-toolbar {
         }
     }
     .louvor-financeiro {
-        h1 {
-            color: #fff;
-            font-size: 2.3rem;
-            text-align: center;
-            margin: 1rem 0.5rem;
-            height: 4rem;
-            top: 1rem;
-            text-align: center;
-        }
+
         .container-louvor-financeiro {
             display: grid;
-            grid-template-columns: repeat(auto-fit, 50%);
+            grid-template-columns: repeat(auto-fit, 45%);
             gap: 2rem;
             align-items: center;
             justify-content: center;
             .content-louvor-financeiro {
                 display: flex;
                 align-items: center;
-                flex-direction: row;
+                flex-direction: column;
                 justify-content: center;
                 gap: 5rem;
                 p {
@@ -235,7 +236,7 @@ mat-toolbar {
         }
         .contato-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, 45%);
+            grid-template-columns: repeat(auto-fit, 40%);
             gap: 2rem;
             align-items: center;
             justify-content: center;
@@ -306,6 +307,127 @@ mat-toolbar {
         }
     }
 }
-.first-info>* {
-    height: 33rem;
+
+h1 {
+    color: #fff;
+    font-size: 2.3rem;
+    text-align: center;
+    margin: 1rem 0.5rem;
+    height: 4rem;
+    top: 1rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 850px) {
+    .menu {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        visibility: hidden;
+        a {
+            font-family: 'Akrobat Bold', sans-serif;
+            font-size: 1.5rem;
+            padding: 1rem;
+            cursor: pointer;
+            color: black;
+            text-decoration: none;
+        }
+        a:hover {
+            font-family: 'Akrobat Bold', sans-serif;
+            font-size: 1.5rem;
+            background-color: #ffa300;
+            padding: 1rem;
+            cursor: pointer;
+        }
+    }
+
+    .body {
+        .louvor-financeiro {
+            .container-louvor-financeiro {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, 45%);
+                gap: 2rem;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .content-louvor-financeiro {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 5rem;
+                    p {
+                        color: #fff;
+                        font-size: 2.3rem;
+                        text-align: start;
+                        margin: 0;
+                    }
+                    p:last-child {
+                        margin: 0 0 0 2rem;
+                        font-size: 1.8rem;
+                        text-align: center;
+                    }
+                    .pix-card {
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        justify-content: center;
+                        background-color: rgba(97, 95, 95, 0.849);
+                        width: 330px;
+                        height: 330px;
+                        border-radius: 4px;
+                        margin: 0 4rem 2rem 4rem;
+                        h1 {
+                            color: #fff;
+                            font-size: 1.3rem;
+                            text-align: center;
+                            margin: 0.5rem 0 0 0;
+                            padding: 0;
+                            height: 1rem;
+                        }
+                        .pix-qr-code {
+                            height: 250px;
+                            width: 250px;
+                            background-color: rgba(0, 0, 0, 0.685);
+                            margin: 2rem;
+                            background: url(../../../assets/pix.jpg);
+                            background-size: cover;
+                        }
+                    }
+                }
+            }
+        }
+        .contato {
+            h1 {
+                color: #fff;
+                font-size: 2.3rem;
+                text-align: center;
+                margin: 2rem 0.5rem;
+            }
+            .contato-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .text {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: flex-start;
+                    p {
+                        color: #fff;
+                        font-size: 1.8rem;
+                        text-align: start;
+                        margin: 0;
+                    }
+                    span {
+                        color: #fff;
+                        font-size: 1.3rem;
+                        text-align: center;
+                        margin: 0.3rem;
+                    }
+                }
+            }
+        }
+    }
 }
