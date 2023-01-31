@@ -1,19 +1,22 @@
 <mat-toolbar color="primary">
     <div class="container-header">
-        <div class="mobile-menu">
-            <div  *ngIf="screenWidth < 850" [ngStyle]="{'display: none': screenWidth > 850}">
-                <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu" >
-                    <mat-icon>menu</mat-icon>
-                </button>
-                <mat-menu #menu="matMenu" style="border: 1px solid red;">
-                    <a mat-menu-item href="#live">CULTO ONLINE</a>
-                    <a mat-menu-item href="#louvor">FAÇA SUA PARTE</a>
-                    <a mat-menu-item href="#live">QUEM SOMOS</a>
-                </mat-menu>
-            </div>
-            <a class="setenta" href="#home">70X7</a>
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu" *ngIf="screenWidth < 850" [ngStyle]="{'display: none': screenWidth > 850}" class="mobile-menu">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <mat-menu
+            #menu="matMenu"
+            [xPosition]="'before'"
+            [yPosition]="'below'"
+        >
+            <a mat-menu-item href="#live">CULTO ONLINE</a>
+            <a mat-menu-item href="#louvor">FAÇA SUA PARTE</a>
+            <a mat-menu-item href="#live">QUEM SOMOS</a>
+            <a mat-menu-item href="/edm">EDM</a>
+        </mat-menu>
+        <div>
+            <a class="setenta">70X7</a>
             <a class="pipe">|</a>
-            <a class="church" href="#home">CHURCH</a>
+            <a class="church">CHURCH</a>
         </div>
         <div class="menu" >
             <a href="#live">CULTO ONLINE</a>
@@ -21,6 +24,8 @@
             <a href="#louvor">FAÇA SUA PARTE</a>
             <a>|</a>
             <a href="#live">QUEM SOMOS</a>
+            <a>|</a>
+            <a href="/edm">EDM</a>
         </div>
 
 
@@ -56,8 +61,8 @@
             (stateChange)="onStateChange($event)"
         ></youtube-player>
     </div>
+    <h1>Cultos Presenciais</h1>
     <div class="cultos">
-        <h1>Cultos Presenciais</h1>
         <div class="img-container">
             <div class="card-cultos">
                 <div class="card-item-cultos">
@@ -101,18 +106,12 @@
             </div>
             <div class="mapouter" style="margin-bottom: 2rem;">
                 <div class="gmap_canvas">
-                    <iframe width="600" height="500" id="gmap_canvas"
+                    <iframe height="500" id="gmap_canvas"
                     src="https://maps.google.com/maps?q=Setor%20A%20Sul%20CSA%203%2070x7%20Church%20-%20Taguatinga,%20Bras%C3%ADlia%20-%20DF&t=&z=17&ie=UTF8&iwloc=&output=embed"
                     frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
                     </iframe>
-                    <a href="https://fmovies-online.net">
-                        fmovies
-                    </a>
                     <br>
-                    <style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}
-                    </style><a href="https://www.embedgooglemap.net">google maps webpage</a>
-                    <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}
-                    </style>
+                    <a href="https://www.embedgooglemap.net">google maps webpage</a>
                 </div>
             </div>
         </div>

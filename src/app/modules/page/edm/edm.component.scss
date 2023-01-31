@@ -1,0 +1,92 @@
+mat-toolbar {
+    height: 70px;
+    position: fixed;
+    z-index: 9;
+}
+a {
+    font-family: 'Akrobat ExtraBold', sans-serif;
+}
+.container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    a {
+        font-family: 'Akrobat ExtraBold', sans-serif;
+        color: #000;
+        text-decoration: none;
+    }
+
+    .setenta {
+        font-size: 2rem;
+    }
+
+    .pipe {
+        font-size: 1.7rem;
+        margin: 0.2rem 0.2rem;
+        position: relative;
+        top: -2px
+    }
+
+    .church {
+        font-size: 2rem;
+    }
+
+    .menu {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        a {
+            font-family: 'Akrobat Bold', sans-serif;
+            font-size: 1.5rem;
+            padding: 1rem;
+            cursor: pointer;
+            color: black;
+            text-decoration: none;
+        }
+        a:hover {
+            font-family: 'Akrobat Bold', sans-serif;
+            font-size: 1.5rem;
+            background-color: #ffa300;
+            padding: 1rem;
+            cursor: pointer;
+        }
+    }
+    .mobile-menu {
+        color: black;
+        margin-right: 4px;
+    }
+}
+.container-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    mat-tab-group {
+        height: calc(100vh - 70px);
+        width: 100vw;
+        margin: 70px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        .container-body {
+            width: 100vw;
+            height: calc(100vh - 122px);
+            overflow: hidden;
+        }
+        h1 {
+            color: #fff;
+            font-size: 2.3rem;
+            text-align: center;
+            margin: 2rem 0.5rem;
+        }
+        span {
+            color: #fff;
+            font-size: 1.4rem;
+            text-align: center;
+            margin: 0.5rem 0.5rem;
+        }
+    }
+}

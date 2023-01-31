@@ -11,7 +11,7 @@ export class SiteComponent implements OnInit {
   screenWidth = innerWidth;
   @ViewChild('player') set player(directive: any) {
     directive.height = '600';
-    directive.width = '1200';
+    directive.width =  window.innerWidth;
   };
   videoId!: string;
 
@@ -22,7 +22,7 @@ export class SiteComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
-    this.getLive();
+    // this.getLive();
     const tag = document.createElement('script');
     tag.src = 'https://www.youtube.com/iframe_api';
     document.body.appendChild(tag);
