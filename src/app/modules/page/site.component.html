@@ -1,36 +1,3 @@
-<mat-toolbar color="primary">
-    <div class="container-header">
-        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu" *ngIf="screenWidth < 850" [ngStyle]="{'display: none': screenWidth > 850}" class="mobile-menu">
-            <mat-icon>menu</mat-icon>
-        </button>
-        <mat-menu
-            #menu="matMenu"
-            [xPosition]="'before'"
-            [yPosition]="'below'"
-        >
-            <a mat-menu-item href="#live">CULTO ONLINE</a>
-            <a mat-menu-item href="#louvor">FAÇA SUA PARTE</a>
-            <a mat-menu-item href="#live">QUEM SOMOS</a>
-            <a mat-menu-item href="/edm">EDM</a>
-        </mat-menu>
-        <div>
-            <a class="setenta">70X7</a>
-            <a class="pipe">|</a>
-            <a class="church">CHURCH</a>
-        </div>
-        <div class="menu" >
-            <a href="#live">CULTO ONLINE</a>
-            <a>|</a>
-            <a href="#louvor">FAÇA SUA PARTE</a>
-            <a>|</a>
-            <a href="#live">QUEM SOMOS</a>
-            <a>|</a>
-            <a href="/edm">EDM</a>
-        </div>
-
-
-    </div>
-</mat-toolbar>
 <div class="body">
     <div class="img-container" id="home"></div>
     <div class="first-info">
@@ -43,8 +10,8 @@
         </div>
         <div class="card-first-info">
             <h1>FAÇA SUA PARTE</h1>
-            <p>Conheça nossas ações socias.</p>
-            <button mat-raised-button color="primary"><a href="#louvor">CLIQUE AQUI</a></button>
+            <p>Conheça nossa edificacão mútua(leitura bliblica nos lares).</p>
+            <button mat-raised-button color="primary">CLIQUE AQUI</button>
         </div>
         <div class="card-first-info">
             <h1>SÉRIE DE MENSAGENS</h1>
@@ -116,16 +83,3 @@
             </div>
         </div>
     </div>
-    <div class="divider">
-        <span></span>
-    </div>
-    <div class="copyrigth">
-        <div>
-            <img src="../../../assets/square-instagram.svg" class="icons" (click)="goToInstagram()">
-            <img src="../../../assets/youtube.svg" class="icons-yt" (click)="goToYt()">
-        </div>
-        <span>
-            © 2023 70X7 CHURCH. All Rights Reserved
-        </span>
-    </div>
-</div>
