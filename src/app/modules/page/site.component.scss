@@ -6,57 +6,7 @@ mat-toolbar {
 a {
     font-family: 'Akrobat ExtraBold', sans-serif;
 }
-.container-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100vw;
-    a {
-        font-family: 'Akrobat ExtraBold', sans-serif;
-        color: #000;
-        text-decoration: none;
-    }
 
-    .setenta {
-        font-size: 2rem;
-    }
-
-    .pipe {
-        font-size: 1.7rem;
-        margin: 0.2rem 0.2rem;
-        position: relative;
-        top: -2px
-    }
-
-    .church {
-        font-size: 2rem;
-    }
-
-    .menu {
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        a {
-            font-family: 'Akrobat Bold', sans-serif;
-            font-size: 1.5rem;
-            padding: 1rem;
-            cursor: pointer;
-            color: black;
-            text-decoration: none;
-        }
-        a:hover {
-            font-family: 'Akrobat Bold', sans-serif;
-            font-size: 1.5rem;
-            background-color: #ffa300;
-            padding: 1rem;
-            cursor: pointer;
-        }
-    }
-    .mobile-menu {
-        color: black;
-        margin-right: 4px;
-    }
-}
 .body {
     height: auto;
     width: 100vw;
@@ -415,27 +365,6 @@ h1 {
 }
 
 @media screen and (max-width: 850px) {
-    .menu {
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        visibility: hidden;
-        a {
-            font-family: 'Akrobat Bold', sans-serif;
-            font-size: 1.5rem;
-            padding: 1rem;
-            cursor: pointer;
-            color: black;
-            text-decoration: none;
-        }
-        a:hover {
-            font-family: 'Akrobat Bold', sans-serif;
-            font-size: 1.5rem;
-            background-color: #ffa300;
-            padding: 1rem;
-            cursor: pointer;
-        }
-    }
 
     .body {
 
