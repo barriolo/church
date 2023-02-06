@@ -2,6 +2,7 @@
 @import "./custom-palettes";
 @import '~@angular/material/theming';
 
+@include mat.core();
 
 $church-primary: mat.define-palette($primary-church-palette, 700);
 $church-accent: mat.define-palette($accent-church-palette, 100);
@@ -27,11 +28,6 @@ $church-theme: mat.define-light-theme(
 // font-family: 'Akrobat Black', sans-serif;
 @include mat.all-component-themes($church-theme);
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 html,
 body {
@@ -40,9 +36,7 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
-  button {
-    font-family: 'Akrobat Bold', sans-serif;
-  }
+
 }
 body {
   font-family: 'Akrobat SemiBold', sans-serif;
@@ -50,6 +44,7 @@ body {
 
 button {
   font-family: 'Akrobat SemiBold', sans-serif;
+  cursor: pointer;
 }
 
 .mat-menu-panel {

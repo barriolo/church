@@ -1,5 +1,5 @@
-import { EdmComponent } from './modules/page/edm/edm.component';
-import { SiteComponent } from './modules/page/site.component';
+import { EdmComponent } from './modules/site/page/edm/edm.component';
+import { SiteComponent } from './modules/site/page/site.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
