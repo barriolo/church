@@ -55,8 +55,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: flex-start;
-            height: 300px;
+            justify-content: space-between;
+            height: 330px;
             background-color: #2e2e2ece;
             h1 {
                 color: #fff;
@@ -68,7 +68,14 @@
                 font-size: 1.3rem;
                 text-align: center;
                 margin: 1rem 0.5rem;
-                height: 5rem;
+            }
+            button {
+                margin: 1rem 0.5rem;
+                font-family: 'Akrobat Bold', sans-serif;
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                }
             }
         }
     }
