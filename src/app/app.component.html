@@ -10,20 +10,20 @@
         >
             <a mat-menu-item href="#live">CULTO ONLINE</a>
             <a mat-menu-item href="#louvor">FAÇA SUA PARTE</a>
-            <a mat-menu-item href="#live">QUEM SOMOS</a>
+            <a mat-menu-item href="/quem-somos">QUEM SOMOS</a>
             <a mat-menu-item href="/edm">EDM</a>
         </mat-menu>
-        <div>
+        <a style="cursor: pointer" href="#home">
             <a class="setenta">70X7</a>
             <a class="pipe">|</a>
             <a class="church">CHURCH</a>
-        </div>
+        </a>
         <div class="menu" >
             <a href="#live">CULTO ONLINE</a>
             <a>|</a>
             <a href="#louvor">FAÇA SUA PARTE</a>
             <a>|</a>
-            <a href="#live">QUEM SOMOS</a>
+            <a href="/quem-somos">QUEM SOMOS</a>
             <a>|</a>
             <a href="/edm">EDM</a>
         </div>
@@ -31,16 +31,20 @@
 
     </div>
 </mat-toolbar>
-<router-outlet></router-outlet>
-<div class="divider">
-    <span></span>
-</div>
-<div class="copyrigth">
-    <div>
-        <img src="../../../assets/square-instagram.svg" class="icons" (click)="goToInstagram()">
-        <img src="../../../assets/youtube.svg" class="icons-yt" (click)="goToYt()">
+<main>
+    <router-outlet></router-outlet>
+</main>
+<footer>
+    <div class="divider">
+        <span></span>
     </div>
-    <span>
-        © 2023 70X7 CHURCH. All Rights Reserved
-    </span>
-</div>
+    <div class="copyrigth">
+        <div>
+            <img src="../../../assets/square-instagram.svg" class="icons" (click)="goToInstagram()">
+            <img src="../../../assets/youtube.svg" class="icons-yt" (click)="goToYt()">
+        </div>
+        <span>
+            © 2023 70X7 CHURCH. All Rights Reserved
+        </span>
+    </div>
+</footer>
