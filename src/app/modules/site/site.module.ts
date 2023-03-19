@@ -16,6 +16,7 @@ import { LouvorFinanceiroComponent } from './page/louvor-financeiro/louvor-finan
 import { CultoPresencialComponent } from './page/culto-presencial/culto-presencial.component';
 import { HeaderComponent } from './page/header/header.component';
 import { QuemSomosComponent } from './page/quem-somos/quem-somos.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [SiteComponent, EdmComponent, CultoOnlineComponent, ContatoComponent, LouvorFinanceiroComponent, CultoPresencialComponent, HeaderComponent, QuemSomosComponent],
@@ -27,7 +28,8 @@ import { QuemSomosComponent } from './page/quem-somos/quem-somos.component';
     HttpClientModule,
     MatIconModule,
     MatMenuModule,
-    MatTabsModule
+    MatTabsModule,
+    FlexLayoutModule
   ]
 })
 export class SiteModule { }
