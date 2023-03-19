@@ -3,13 +3,26 @@
     align-items: center;
     justify-content: center;
 
-    height: calc(100vh - 70px);
-    width: 100%;
-    margin: 0rem 5rem;
+    height: 100%;
+    padding: 70px 0;
     ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 1280px;
+        padding: 0 2rem;
         li {
             text-decoration: dotted;
             color: #fff;
+            div {
+                ul {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                    flex-direction: column;
+                }
+            }
         }
     }
     h1 {
@@ -24,5 +37,237 @@
         color: #fff;
         font-size: 14pt;
         text-align: start;
+        text-overflow: ellipsis;
+        word-break: break-all;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .container-quem-somos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 100%;
+        padding: 70px 0;
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 900px;
+            padding: 0 1rem;
+            li {
+                text-decoration: dotted;
+                color: #fff;
+                div {
+                    ul {
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: center;
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+        h1 {
+            color: #fff;
+            font-size: 24pt;
+            text-align: start;
+            padding: 0;
+            font-family: 'Akrobat ExtraBold', sans-serif;
+        }
+        p {
+            font-family: 'Akrobat Bold', sans-serif;
+            color: #fff;
+            font-size: 14pt;
+            text-align: start;
+            text-overflow: ellipsis;
+            word-break: break-all;
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .container-quem-somos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 100%;
+        padding: 70px 0;
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 600px;
+            padding: 0 1rem;
+            li {
+                text-decoration: dotted;
+                color: #fff;
+                div {
+                    ul {
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: center;
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+        h1 {
+            color: #fff;
+            font-size: 24pt;
+            text-align: start;
+            padding: 0;
+            font-family: 'Akrobat ExtraBold', sans-serif;
+        }
+        p {
+            font-family: 'Akrobat Bold', sans-serif;
+            color: #fff;
+            font-size: 14pt;
+            text-align: start;
+            text-overflow: ellipsis;
+            word-break: break-all;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container-quem-somos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 100%;
+        padding: 70px 0;
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 450px;
+            padding: 0 0.5rem;
+            li {
+                text-decoration: dotted;
+                color: #fff;
+                div {
+                    ul {
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: center;
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+        h1 {
+            color: #fff;
+            font-size: 24pt;
+            text-align: start;
+            padding: 0;
+            font-family: 'Akrobat ExtraBold', sans-serif;
+        }
+        p {
+            font-family: 'Akrobat Bold', sans-serif;
+            color: #fff;
+            font-size: 14pt;
+            text-align: start;
+            text-overflow: ellipsis;
+            word-break: break-all;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container-quem-somos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 100%;
+        padding: 70px 0;
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 350px;
+            padding: 0 0.5rem;
+            li {
+                text-decoration: dotted;
+                color: #fff;
+                div {
+                    ul {
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: center;
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+        h1 {
+            color: #fff;
+            font-size: 24pt;
+            text-align: start;
+            padding: 0;
+            font-family: 'Akrobat ExtraBold', sans-serif;
+        }
+        p {
+            font-family: 'Akrobat Bold', sans-serif;
+            color: #fff;
+            font-size: 14pt;
+            text-align: start;
+            text-overflow: ellipsis;
+            word-break: break-all;
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .container-quem-somos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 100%;
+        padding: 70px 0;
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 300px;
+            padding: 0 0.5rem;
+            li {
+                text-decoration: dotted;
+                color: #fff;
+                div {
+                    ul {
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: center;
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+        h1 {
+            color: #fff;
+            font-size: 24pt;
+            text-align: start;
+            padding: 0;
+            font-family: 'Akrobat ExtraBold', sans-serif;
+        }
+        p {
+            font-family: 'Akrobat Bold', sans-serif;
+            color: #fff;
+            font-size: 14pt;
+            text-align: start;
+            text-overflow: ellipsis;
+            word-break: break-all;
+        }
     }
 }
