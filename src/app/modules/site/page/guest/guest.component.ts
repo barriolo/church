@@ -49,7 +49,7 @@ export class GuestComponent implements OnInit {
         'Dados salvos com sucesso. Muito obrigado!',
         'done'
       );
-      // this.router.navigateByUrl('')
+      this.router.navigateByUrl('')
     })
   }
 }
