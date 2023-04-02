@@ -9,7 +9,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import {MatTabsModule} from '@angular/material/tabs';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { CultoOnlineComponent } from './page/culto-online/culto-online.component';
 import { ContatoComponent } from './page/contato/contato.component';
 import { LouvorFinanceiroComponent } from './page/louvor-financeiro/louvor-financeiro.component';
@@ -17,9 +16,29 @@ import { CultoPresencialComponent } from './page/culto-presencial/culto-presenci
 import { HeaderComponent } from './page/header/header.component';
 import { QuemSomosComponent } from './page/quem-somos/quem-somos.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { GuestComponent } from './page/guest/guest.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatCardModule } from '@angular/material/card';
+import { MatRadioModule } from '@angular/material/radio';
+import { DateMaskDirective } from 'src/app/core/directive/date-mask.directive';
+import { NgxMaskModule } from 'ngx-mask';
+import { ToastModule } from 'src/app/shared/toast/toast.module';
 
 @NgModule({
-  declarations: [SiteComponent, EdmComponent, CultoOnlineComponent, ContatoComponent, LouvorFinanceiroComponent, CultoPresencialComponent, HeaderComponent, QuemSomosComponent],
+  declarations: [
+    SiteComponent,
+    EdmComponent,
+    CultoOnlineComponent,
+    ContatoComponent,
+    LouvorFinanceiroComponent,
+    CultoPresencialComponent,
+    HeaderComponent,
+    QuemSomosComponent,
+    GuestComponent,
+    DateMaskDirective
+  ],
   imports: [
     CommonModule,
     MatToolbarModule,
@@ -29,7 +48,14 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatIconModule,
     MatMenuModule,
     MatTabsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatCardModule,
+    MatRadioModule,
+    NgxMaskModule.forRoot(),
+    ToastModule
   ]
 })
 export class SiteModule { }

@@ -1,0 +1,40 @@
+<div class="container">
+    <mat-toolbar color="primary">
+        <div class="container-header">
+            <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu" *ngIf="screenWidth < 850" [ngStyle]="{'display: none': screenWidth > 850}" class="mobile-menu">
+                <mat-icon>menu</mat-icon>
+            </button>
+            <mat-menu
+                #menu="matMenu"
+                [xPosition]="'after'"
+                [yPosition]="'above'"
+            >
+                <a mat-menu-item href="#live" >CULTO ONLINE</a>
+                <a mat-menu-item href="#louvor">FAÇA SUA PARTE</a>
+                <a mat-menu-item href="/quem-somos">QUEM SOMOS</a>
+                <a mat-menu-item href="/edm">EDM</a>
+            </mat-menu>
+            <a style="cursor: pointer" href="#home" >
+                <a class="setenta">70X7</a>
+                <a class="pipe">|</a>
+                <a class="church">CHURCH</a>
+            </a>
+            <div class="menu"  fxHide.xs fxHide.sm>
+                <a href="#live">CULTO ONLINE</a>
+                <a>|</a>
+                <a href="#louvor">FAÇA SUA PARTE</a>
+                <a>|</a>
+                <a href="/quem-somos">QUEM SOMOS</a>
+                <a>|</a>
+                <a href="/edm">EDM</a>
+                <a>|</a>
+                <a href="/auth">MEMBROS</a>
+            </div>
+
+
+        </div>
+    </mat-toolbar>
+    <div class="main_content">
+        <router-outlet></router-outlet>
+    </div>
+</div>

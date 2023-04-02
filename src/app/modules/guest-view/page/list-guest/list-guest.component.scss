@@ -1,0 +1,27 @@
+.title {
+    font-family: 'Akrobat Bold', sans-serif;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: 2rem;
+}
+.container {
+    margin: 1rem 1rem 3rem 1rem;
+    height: auto;
+    mat-card {
+        margin: 1rem;
+        width: 400px;
+        .display-info {
+            margin: 0.2rem;
+            .label {
+                font-family: 'Akrobat Bold', sans-serif;
+                font-size: 19px;
+                text-transform: uppercase;
+            }
+            .info {
+                font-family: 'Akrobat Bold', sans-serif;
+                font-size: 17px;
+            }
+        }
+    }
+}

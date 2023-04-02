@@ -1,0 +1,56 @@
+<div class="container-guest" fxLayoutAlign="start center" fxLayout="column">
+    <mat-card fxLayoutAlign="center start" fxLayout="column" [formGroup]="createGuestForm">
+        <div class="welcome" fxLayoutAlign="center center" fxLayout="column">
+            <h1>Bem-vindo(a)</h1>
+        </div>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Nome Completo</mat-label>
+            <input matInput placeholder="Digite seu nome" formControlName="name">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Idade</mat-label>
+            <input matInput placeholder="Digite sua idade" type="number" formControlName="age">
+        </mat-form-field>
+
+        <label id="isFirstTime">É a sua primeira vez conosco?</label>
+        <mat-radio-group aria-labelledby="isFirstTime" formControlName="isFirstTime">
+            <mat-radio-button color="primary" [value]=true>Sim</mat-radio-button>
+            <mat-radio-button color="primary" [value]=false>Não, já estive outras vezes</mat-radio-button>
+        </mat-radio-group>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Você congrega em alguma comunidade de fé? Qual?</mat-label>
+            <input matInput placeholder="Fique a vontantde para falar" formControlName="yourChurch">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Como conheceu a 70x7?</mat-label>
+            <input matInput placeholder="Fique a vontantde para falar" formControlName="howDidYouMeetThe70x7">
+        </mat-form-field>
+
+        <span>Podemos Entrar em contato com você? Se sim, nos infome seus contatos.</span>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Telefone</mat-label>
+            <input matInput placeholder="Digite seu Telefone" formControlName="phone" mask="(00) 0000-0000 ||(00) 00000-0000">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Digite seu email" formControlName="email">
+            <mat-icon matSuffix>email</mat-icon>
+        </mat-form-field>
+
+        <label id="isFirstTime">Gostaria de ser incluído em nosso grupo do Whatsapp?</label>
+        <mat-radio-group aria-labelledby="isFirstTime" formControlName="wouldLikeIncludeInWhatsapp">
+            <mat-radio-button color="primary" [value]=true>Sim, Por favor</mat-radio-button>
+            <mat-radio-button color="primary" [value]=false>Não, Obrigado(a)</mat-radio-button>
+        </mat-radio-group>
+        <div class="welcome" fxLayoutAlign="center center" fxLayout="column">
+            <button mat-raised-button color="primary" class="btn-login" (click)="createGuest()">Enviar</button>
+        </div>
+    </mat-card>
+
+</div>

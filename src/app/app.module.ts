@@ -1,3 +1,4 @@
+import { AdminLayoutModule } from './core/layout/admin-layout/admin-layout.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
@@ -9,6 +10,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserModule } from '@angular/platform-browser';
+import { LoginModule } from './modules/login/login.module';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { AuthInterceptor } from './core/http-interceptors/auth.interceptor';
 
 @NgModule({
   declarations: [
@@ -19,13 +23,17 @@ import { BrowserModule } from '@angular/platform-browser';
     BrowserAnimationsModule,
     AppRoutingModule,
     SiteModule,
+    LoginModule,
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
     MatMenuModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    AdminLayoutModule,
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

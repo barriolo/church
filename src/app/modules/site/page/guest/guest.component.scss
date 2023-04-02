@@ -1,0 +1,167 @@
+.container-guest{
+    height: calc(100vh - 80px);
+    width: 100vw;
+    overflow-y:  scroll;
+    overflow-x: hidden;
+    padding: 2rem;
+    mat-card {
+        height: auto;
+        width: 500px;
+        .welcome {
+            width: 100%;
+            h1 {
+                font-size: 24px;
+                font-family: 'Akrobat Bold', sans-serif;
+            }
+        }
+        span {
+            font-size: 16px;
+            margin-bottom: 24px;
+            font-family: 'Akrobat Semi-Bold', sans-serif;
+        }
+        label {
+            margin: 0.5rem 0rem;
+            font-family: 'Akrobat Semi-Bold', sans-serif;
+            font-size: 16px;
+        }
+
+        mat-radio-group {
+            margin: 0.5rem 1rem 1rem 1rem;
+            mat-radio-button {
+                margin-right: 1rem;
+            }
+        }
+
+        mat-form-field {
+            width: 100%;
+        }
+        .btn-login {
+            width: 200px;
+            margin: 2rem 0;
+        }
+    }
+}
+
+
+@media screen and (max-width: 510px) {
+    .container-guest{
+        mat-card {
+            height: auto;
+            width: 400px;
+            .welcome {
+                width: 100%;
+                h1 {
+                    font-size: 24px;
+                    font-family: 'Akrobat Bold', sans-serif;
+                }
+            }
+            span {
+                font-size: 16px;
+                margin-bottom: 24px;
+                font-family: 'Akrobat Semi-Bold', sans-serif;
+            }
+            label {
+                margin: 0.5rem 0rem;
+                font-family: 'Akrobat Semi-Bold', sans-serif;
+                font-size: 16px;
+            }
+
+            mat-radio-group {
+                margin: 0.5rem 1rem 1rem 1rem;
+                mat-radio-button {
+                    margin-bottom: 1rem;
+                }
+            }
+
+            mat-form-field {
+                width: 100%;
+            }
+            .btn-login {
+                width: 200px;
+                margin: 2rem 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container-guest{
+        mat-card {
+            height: auto;
+            width: 370px;
+            .welcome {
+                width: 100%;
+                h1 {
+                    font-size: 24px;
+                    font-family: 'Akrobat Bold', sans-serif;
+                }
+            }
+            span {
+                font-size: 16px;
+                margin-bottom: 24px;
+                font-family: 'Akrobat Semi-Bold', sans-serif;
+            }
+            label {
+                margin: 0.5rem 0rem;
+                font-family: 'Akrobat Semi-Bold', sans-serif;
+                font-size: 16px;
+            }
+
+            mat-radio-group {
+                margin: 0.5rem 1rem 1rem 1rem;
+                mat-radio-button {
+                    margin-bottom: 1rem;
+                }
+            }
+
+            mat-form-field {
+                width: 100%;
+            }
+            .btn-login {
+                width: 200px;
+                margin: 2rem 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .container-guest{
+        mat-card {
+            height: auto;
+            width: 340px;
+            .welcome {
+                width: 100%;
+                h1 {
+                    font-size: 24px;
+                    font-family: 'Akrobat Bold', sans-serif;
+                }
+            }
+            span {
+                font-size: 16px;
+                margin-bottom: 24px;
+                font-family: 'Akrobat Semi-Bold', sans-serif;
+            }
+            label {
+                margin: 0.5rem 0rem;
+                font-family: 'Akrobat Semi-Bold', sans-serif;
+                font-size: 16px;
+            }
+
+            mat-radio-group {
+                margin: 0.5rem 1rem 1rem 1rem;
+                mat-radio-button {
+                    margin-bottom: 1rem;
+                }
+            }
+
+            mat-form-field {
+                width: 100%;
+            }
+            .btn-login {
+                width: 200px;
+                margin: 2rem 0;
+            }
+        }
+    }
+}

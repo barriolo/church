@@ -1,0 +1,122 @@
+
+.container {
+  overflow: hidden;
+}
+mat-toolbar {
+  height: 70px;
+}
+a {
+  font-family: 'Akrobat ExtraBold', sans-serif;
+}
+.container-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  a {
+      font-family: 'Akrobat ExtraBold', sans-serif;
+      color: #000;
+      text-decoration: none;
+  }
+
+  .setenta {
+      font-size: 2rem;
+  }
+
+  .pipe {
+      font-size: 1.7rem;
+      margin: 0.2rem 0.2rem;
+      position: relative;
+      top: -2px
+  }
+
+  .church {
+      font-size: 2rem;
+  }
+
+  .menu {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      a {
+          font-family: 'Akrobat Bold', sans-serif;
+          font-size: 1.5rem;
+          padding: 1rem;
+          cursor: pointer;
+          color: black;
+          text-decoration: none;
+      }
+      a:hover {
+          font-family: 'Akrobat Bold', sans-serif;
+          font-size: 1.5rem;
+          background-color: #ffa300;
+          padding: 1rem;
+          cursor: pointer;
+      }
+  }
+  .mobile-menu {
+      color: black;
+      margin-right: 4px;
+  }
+}
+
+
+footer {
+  .divider {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      span {
+          width: 1220px;
+          border: 1px solid #fff;
+          margin: 2rem;
+      }
+  }
+  .copyrigth {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      div {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          gap: 4rem;
+          .icons {
+              width: 30px;
+              cursor: pointer;
+              svg {
+                  fill: #fff;
+              }
+          }
+          .icons-yt {
+              width: 50px;
+              cursor: pointer;
+              svg {
+                  fill: #fff;
+              }
+          }
+      }
+      span {
+          color: #fff;
+          font-size: 1rem;
+          text-align: center;
+          margin: 1rem;
+      }
+  }
+}
+
+.main_content {
+    width:100%;
+    height: calc(100vh - 70px);
+    background: #000;
+    overflow-y: scroll;
+    div {
+      min-height: 300px;
+      overflow: hidden;
+    }
+  }

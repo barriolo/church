@@ -1,0 +1,71 @@
+<div>
+    <h1 class="title">Lista de Visistantes</h1>
+    <div fxLayout="row wrap" fxLayoutAlign="start start" class="container">
+        <mat-card  *ngFor="let guest of guests">
+            <div fxLayoutAlign="start start" fxLayout="column">
+                <div class="display-info">
+                    <span class="label">Nome:</span>
+                    <span class="info">
+                        {{ guest.name }}
+                    </span>
+                </div>
+
+                <div class="display-info">
+                    <span class="label">Idade:</span>
+                    <span class="info">
+                        {{ guest.age }}
+                    </span>
+                </div>
+
+                <div class="display-info">
+                    <span class="label">Email:</span>
+                    <span class="info">
+                        {{ guest.email }}
+                    </span>
+                </div>
+
+                <div class="display-info">
+                    <span class="label">Telefone:</span>
+                    <span class="info">
+                        {{ guest.phone }}
+                    </span>
+                </div>
+
+                <div class="display-info">
+                    <span class="label">Primeira vez na 70x7:</span>
+                    <span class="info">
+                        {{ guest.isFirstTime === true ? 'Sim' : 'Não' }}
+                    </span>
+                </div>
+
+                <div class="display-info">
+                    <span class="label">Como conheceu a 70x7:</span>
+                    <span class="info">
+                        {{ guest.howDidYouMeetThe70x7 }}
+                    </span>
+                </div>
+
+
+                <div class="display-info">
+                    <span class="label">Comunidade de fé do visitante:</span>
+                    <span class="info">
+                        {{ guest.yourChurch }}
+                    </span>
+                </div>
+
+                <div class="display-info">
+                    <span class="label">Entrar no grupo do whatsapp:</span>
+                    <span class="info">
+                        {{ guest.wouldLikeIncludeInWhatsapp === true ? 'Sim' : 'Não' }}
+                    </span>
+                </div>
+                <div class="display-info">
+                    <span class="label">Dia do culto:</span>
+                    <span class="info">
+                        {{ guest.createdAt | date: 'dd/MM/yyyy' }}
+                    </span>
+                </div>
+            </div>
+        </mat-card>
+    </div>
+</div>

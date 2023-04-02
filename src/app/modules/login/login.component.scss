@@ -1,0 +1,22 @@
+.container-login{
+    height: calc(100vh - 200px);
+    mat-card {
+        height: 400px;
+        width: 500px;
+        h1 {
+            font-size: 24px;
+            font-family: 'Akrobat Bold', sans-serif;
+        }
+        span {
+            font-size: 14px;
+            margin-bottom: 24px;
+            font-family: 'Akrobat Semi-bold', sans-serif;
+        }
+        mat-form-field {
+            width: 100%;
+        }
+        .btn-login {
+            width: 200px;
+        }
+    }
+}

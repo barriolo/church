@@ -1,22 +1,31 @@
-import { QuemSomosComponent } from './modules/site/page/quem-somos/quem-somos.component';
-import { EdmComponent } from './modules/site/page/edm/edm.component';
-import { SiteComponent } from './modules/site/page/site.component';
+import { AdminLayoutComponent } from './core/layout/admin-layout/admin-layout.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { SiteComponent } from './core/layout/site/site.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: SiteComponent
+    component: SiteComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: () =>
+          import('./core/layout/site/site.module').then((m) => m.SiteModule),
+      },
+    ],
   },
   {
-    path: 'edm',
-    component: EdmComponent
+    path: 'admin',
+    component: AdminLayoutComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: () =>
+          import('./core/layout/admin-layout/admin-layout.module').then((m) => m.AdminLayoutModule),
+      },
+    ],
   },
-  {
-    path: 'quem-somos',
-    component: QuemSomosComponent
-  }
 ];
 
 @NgModule({
